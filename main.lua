@@ -106,7 +106,7 @@ function love.run()
 end
 
 GUI.style.BEBAS = love.graphics.newFont("res/BEBAS___.ttf", 58)
-GUI.style.Autobus = love.graphics.newFont("res/Autobus-Bold.ttf")
+GUI.style.Autobus = love.graphics.newFont("res/Autobus-Bold.ttf", 40)
 
 GUI.loadElements("GUI/Elements")
 

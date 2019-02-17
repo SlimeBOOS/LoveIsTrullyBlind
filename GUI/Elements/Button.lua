@@ -27,3 +27,10 @@ end
 function Button:mousemoved(x, y)
   self.isHover = self:inBounds(x,y)
 end
+
+function Button:mousereleased(x, y, button)
+  if self.isHover and button == 1 and self.mouseclicked then
+    self.mouseclicked()
+    self.isHover = false
+  end
+end
